@@ -346,7 +346,7 @@ string freeLooker(string targetMontir, string checkDate, int count, Service* ign
 
     Service *serv = headServ;
     bool crash = false;
- 
+
     while (serv != NULL) 
     {
         if (serv != ignoreServ && serv -> doneServ == "0") 
@@ -557,7 +557,7 @@ void newServ()
         headServ = servBaru;
         tailServ = servBaru;
     }
-    else
+    else    
     {
         tailServ -> next = servBaru;
         servBaru -> prev = tailServ;
